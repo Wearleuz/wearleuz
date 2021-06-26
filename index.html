@@ -919,16 +919,12 @@ letter-spacing: 1px!important;
 <div>
 <script data-cfasync="false" type="text/javascript" src="https://app.shopsettings.com/script.js?62143590&data_platform=code&data_date=2021-06-13" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-62143590");</script>
 </div> -->
-<div id='button_card' style='width: 175px;height:44px;'></div>
-<script type='text/javascript' src='https://merchant.webmoney.ru/conf/lib/widgets/wmApp.js?v=1.1'></script>
-<script type='text/javascript'>
- window.webmoney.widgets().button.create({ lang: 'ru', data: { amount: 10.00, purse: 'R102112177124', desc: 'тестовый товар' , paymentType: 'card' }, style: { theme: 'wm', showAmount: true } })
-   .on('paymentComplete', function (data) {
-   // your code
-     console.log(data)
-   })
-   .mount('button_card')
-</script>
+<form action="https://merchant.webmoney.ru/lmi/payment.asp" method="POST">
+ <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="10.00">
+ <input type="hidden" name="LMI_PAYMENT_DESC_BASE64" value="0YLQtdGB0YLQvtCy0YvQuSDRgtC+0LLQsNGA">
+ <input type="hidden" name="LMI_PAYEE_PURSE" value="R102112177124">
+<input type="submit" class="wmbtn" style="font-famaly:Verdana, Helvetica, sans-serif!important;padding:0 10px;height:30px;font-size:12px!important;border:1px solid #538ec1!important;background:#a4cef4!important;color:#fff!important;" value="&#1086;&#1087;&#1083;&#1072;&#1090;&#1080;&#1090;&#1100; 10.00 WMR ">
+</form>
 <div id="my-store-62607544"></div>
 <div>
 <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?62607544&data_platform=code&data_date=2021-06-26" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-62607544");</script>
